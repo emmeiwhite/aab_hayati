@@ -9,7 +9,7 @@ export default class Menu extends Component{
 
                 <View style={styles.buttonRow}>
                     <TouchableOpacity style={styles.gestureTouch}>
-                            <Text style={styles.textLabel}>BOOKS</Text>
+                            <Text style={styles.textLabel} onPress={()=>Actions.books()}>BOOKS</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.gestureTouch}>
