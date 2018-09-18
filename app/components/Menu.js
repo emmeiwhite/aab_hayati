@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {StyleSheet,TouchableOpacity,View,Text,Alert} from 'react-native';
-
+import {Actions} from 'react-native-router-flux';
 
 export default class Menu extends Component{
     render(){
@@ -19,7 +19,7 @@ export default class Menu extends Component{
 
                 <View style={styles.buttonRow}>
                     <TouchableOpacity style={styles.gestureTouch}>
-                            <Text style={styles.textLabel} onPress={()=>Alert.alert("Let's create our Contact page !!!")}>CONTACT</Text>
+                            <Text style={styles.textLabel} onPress={()=>Actions.contact()}>CONTACT</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.gestureTouch}>
